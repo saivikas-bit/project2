@@ -1,0 +1,67 @@
+<app-topnav></app-topnav>
+<app-sidenavbar></app-sidenavbar>
+<div class="main-container">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        <div class="custom-datepicker">
+          <div id="reportrange">
+            <span></span
+            ><!-- <b class="caret"></b> -->
+            <app-drpicker></app-drpicker>
+            <!-- <i class="glyphicon glyphicon-calendar fa fa-calendar"></i> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12 d-flex justify-content-end my-2">
+        <div class="statuscontainer mx-2 text-success h5 font-weight-normal">
+          <div class="status-online">
+            Online<span class="status-online-count">
+              {{ online }}
+            </span>
+          </div>
+        </div>
+        <div class="statuscontainer mx-1 text-dark h5 font-weight-normal">
+          <div class="status-offline">
+            offline<span class="status-online-count">
+              {{ offline }}
+            </span>
+          </div>
+        </div>
+        <div class="statuscontainer mx-1 text-warning h5 font-weight-normal">
+          <div class="status-away">
+            Away<span class="status-online-count"> 0 </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        <app-productivitygraph></app-productivitygraph>
+      </div>
+      <div class="col-lg-6 col-12">
+        <app-violationgraph></app-violationgraph>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        <app-latestsnapshot></app-latestsnapshot>
+      </div>
+      <div class="col-lg-6 col-12">
+        <app-activitylog></app-activitylog>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        <app-appusagegraph></app-appusagegraph>
+        <!-- <app-dashinfogrpgh></app-dashinfogrpgh> -->
+      </div>
+      <div class="col-lg-6 col-12">
+        <app-webusagegraph></app-webusagegraph>
+      </div>
+    </div>
+    <div class="col-12 p-0">
+      <app-onlineemp></app-onlineemp>
+    </div>
+  </div>
+</div>

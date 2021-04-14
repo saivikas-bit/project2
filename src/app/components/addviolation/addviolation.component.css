@@ -1,0 +1,188 @@
+.main-container {
+  /* padding: 25px; */
+  margin-top: 5rem;
+  margin-left: 16.3rem;
+}
+
+.title-section {
+  background-image: url("../../../assets/topbar-background-sky-blue.jpg");
+  width: 100vw;
+  height: 11vh;
+  padding: 20px;
+  padding-left: 75px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-section h3 {
+  color: white;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+}
+
+.styled-table thead tr {
+  background-color: blue;
+  color: #ffffff;
+  text-align: left;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+.styled-table td {
+  font-size: 12px;
+}
+
+.btn:hover {
+  background-color: blue;
+}
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+table tr:first-child th:first-child {
+  border-top-left-radius: 16px;
+}
+
+/* top-right border-radius */
+table tr:first-child th:last-child {
+  border-top-right-radius: 16px;
+}
+
+/* bottom-left border-radius */
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 16px;
+}
+
+/* bottom-right border-radius */
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 16px;
+}
+.form-label,
+label {
+  margin-bottom: 4px;
+  /* font-size: 14px; */
+}
+.form-control {
+  font-size: 14px;
+  padding: 4px 8px;
+}
+.modal-title {
+  font-size: 18px;
+}
+.btn {
+  padding: 6px 6px;
+}
+@media (max-width: 1295px) {
+  .main-container {
+    margin-top: 5.3rem;
+    margin-left: 12rem;
+    padding: 0px;
+  }
+}
+@media (max-width: 992px) {
+  .main-container {
+    margin-top: 5.3rem;
+    margin-left: 0;
+    padding: 0px;
+  }
+  .h1 {
+    font-size: 12px;
+  }
+}
+form {
+  font-size: 12px;
+}
+.btn {
+  font-size: 12px;
+}
+.styled-table thead {
+  font-weight: normal;
+}
+input::placeholder {
+  font-size: 12px;
+}
+input {
+  font-size: 12px;
+}
+
+.message-input-main-wrapper {
+  height: 134px;
+}
+ng-multiselect-dropdown .dropdown-list {
+  text-transform: capitalize !important;
+}
+ng-multiselect-dropdown
+  .multiselect-item-checkbox
+  input[type="checkbox"]
+  + div:before {
+  display: none !important;
+  border: 0px solid #adadad !important;
+  animation: none !important;
+  text-transform: capitalize;
+}
+ng-multiselect-dropdown
+  .multiselect-item-checkbox
+  input[type="checkbox"]
+  + div:after {
+  display: none !important;
+  border: 0px solid #adadad !important;
+  animation: none !important;
+}
+
+ng-multiselect-dropdown .multiselect-dropdown .dropdown-btn .selected-item {
+  background-color: white !important;
+  color: black !important;
+  border: 0px !important;
+  text-transform: capitalize !important;
+}
+
+ng-multiselect-dropdown
+  .multiselect-dropdown
+  .dropdown-btn
+  .selected-item:hover {
+  box-shadow: none !important;
+  text-transform: capitalize !important;
+}
+form {
+  font-size: 14px;
+}
+
+/* :host ::ng-deep .multiselect-dropdown .dropdown-btn {
+display: inline-block;
+border: 1px solid #adadad;
+width: 100%;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 12px;
+font-weight: 400;
+line-height: 1.1;
+text-align: left;
+vertical-align: middle;
+cursor: pointer;
+background-image: none;
+border-radius: 4px;
+} */

@@ -1,0 +1,125 @@
+.main-container {
+  /* padding: 25px; */
+  margin-top: 5rem;
+  margin-left: 16.3rem;
+}
+.title-section {
+  background-image: url("../../../assets/topbar-background-sky-blue.jpg");
+  width: 100vw;
+  height: 11vh;
+  padding: 20px;
+  padding-left: 75px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title-section h3 {
+  color: white;
+}
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+table * {
+  position: relative;
+  font-size: 12px;
+}
+table td,
+table th {
+  padding-left: 8px;
+}
+table thead tr {
+  height: 60px;
+  background: blue;
+  border: 1px solid white;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+table tbody tr {
+  height: 50px;
+}
+table tbody tr:last-child {
+  border: 0;
+}
+/* table td, table th {
+    text-align: left;
+  }
+  table td.l, table th.l {
+    text-align: right;
+  }
+  table td.c, table th.c {
+    text-align: center;
+  }
+  table td.r, table th.r {
+    text-align: center;
+  } */
+
+.table100-head th {
+  /* font-family: OpenSans-Regular; */
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tbody tr {
+  /* font-family: OpenSans-Regular; */
+  font-size: 13px;
+  color: black;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:hover {
+  color: #555555;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.column1 {
+  width: 80px;
+  /* padding-left: 20px; */
+}
+
+.column2 {
+  width: 80px;
+}
+
+.column3 {
+  width: 40px;
+}
+
+.column4 {
+  width: 80px;
+  /* text-align: center;  */
+}
+
+.column5 {
+  width: 80px;
+  /* text-align: center; */
+}
+
+.column6 {
+  width: 80px;
+  /* text-align: center; */
+  /* padding-right: 60px; */
+}
+.column7 {
+  width: 80px;
+  /* text-align: center; */
+}
+.column8 {
+  width: 80px;
+  /* text-align: center; */
+}

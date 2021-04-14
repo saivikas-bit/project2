@@ -1,0 +1,53 @@
+<app-card>
+  <div *ngIf="!loading" style="margin-left: 6rem">
+    <app-loadingspinner2></app-loadingspinner2>
+  </div>
+
+  <h5 class="h5" style="color: blue">Latest Snapshots</h5>
+  <div class="scroll" *ngIf="loading">
+    <div class="row m-auto">
+      <div class="col-3 m-3" *ngFor="let single of snapshotdata">
+        <div class="card" style="width: 135px; border: 0px">
+          <div
+            style="
+              height: 5rem;
+              width: 100%;
+              display: inline-block;
+              border: 1px solid rgba(0, 0, 0, 0.103);
+            "
+          >
+            <img
+              src="{{ single['latest'] }}"
+              alt="image"
+              style="width: 100%; height: 100%"
+            />
+          </div>
+          <div>
+            <a
+              [routerLink]="[
+                '/latestsnap',
+                single['employeeid'],
+                single['name']
+              ]"
+              class="text-capitalize"
+              >{{ single["name"] }}</a
+            >
+            <div style="font-size: 10px">
+              {{
+                single["date"] !== ""
+                  ? (single["date"] | date: "medium")
+                  : "invalid"
+              }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 m-3">
+        <div class="card text-center more" routerLink="/latestsnapshots">
+          More
+        </div>
+      </div>
+      <!-- <div class="col-1"></div> -->
+    </div>
+  </div>
+</app-card>

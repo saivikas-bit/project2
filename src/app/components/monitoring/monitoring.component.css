@@ -1,0 +1,66 @@
+.main-container {
+  /* padding: 25px; */
+  margin-top: 5rem;
+  margin-left: 16.3rem;
+}
+
+.logo,
+.logo1 {
+  background-image: url('./../../../assets/undraw_Data_re_80ws.svg');
+  width: 80%;
+  height: 12rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+
+}
+
+.logo2 {
+  background-image: url('./../../../assets/undraw_App_wireframe_re_d467.svg');
+  width: 80%;
+  height: 12rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+
+}
+
+.logo3 {
+  background-image: url('./../../../assets/undraw_Browser_stats_re_j7wy.svg');
+  width: 80%;
+  height: 12rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+
+}
+
+.logo4 {
+  background-image: url('./../../../assets/undraw_Cloud_docs_re_xjht.svg');
+  width: 80%;
+  height: 12rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+
+}
+
+.logo5 {
+  background-image: url('./../../../assets/undraw_opened_tabs_re_s5ur.svg');
+  width: 80%;
+  height: 12rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+
+}
+
+
+.card {
+  width: 80%;
+
+}

@@ -1,0 +1,19 @@
+.main-container {
+  /* padding: 25px; */
+  margin-top: 5rem;
+  margin-left: 16.3rem;
+}
+
+.title-section {
+  background-image: url('../../../assets/topbar-background-sky-blue.jpg');
+  width: 100vw;
+  height: 11vh;
+  padding: 20px;
+  padding-left: 75px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-section h3 {
+  color: white;
+}

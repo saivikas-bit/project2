@@ -1,0 +1,61 @@
+.main-container {
+  /* padding: 25px; */
+  margin-top: 5rem;
+  margin-left: 16.3rem;
+}
+
+.title-section {
+  background-image: url("../../../assets/topbar-background-sky-blue.jpg");
+  width: 100vw;
+  height: 11vh;
+  padding: 20px;
+  padding-left: 75px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-section h3 {
+  color: white;
+}
+.blink {
+  position: absolute;
+  right: 9px;
+  background-color: rgb(117, 223, 117);
+  text-align: center;
+  width: 30px;
+  border-radius: 3px;
+  padding: 0px 3px;
+  top: 29px;
+}
+span {
+  font-size: 12px;
+  /* font-family: cursive; */
+  color: white;
+  animation: blink 1s linear infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  /* 50%{opacity: .5;} */
+  100% {
+    opacity: 1;
+  }
+}
+.empdetails {
+  margin-left: 6px;
+  color: black;
+}
+.sysname {
+  font-size: 12px;
+  margin-top: 4px;
+}
+.username {
+  font-size: 14px;
+  margin-left: 8px;
+}
+.fa {
+  color: blue;
+  font-size: 14px;
+  width: 14px;
+}

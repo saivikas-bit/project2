@@ -1,0 +1,14 @@
+.card {
+  padding: 4px 16px;
+  margin: 10px 6px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  max-width: 100%;
+  height: 30vh;
+  position: relative;
+  /* z-index: -1;    */
+}
+
+.card-title {
+  font-size: large;
+}

@@ -1,0 +1,33 @@
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  /* border: 1px solid #ddd;  */
+  padding: 8px;
+}
+
+#customers th {
+  /* border: 0px solid; */
+}
+
+#customers td {
+  font-size: 12px;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: black;
+  font-size: 14px;
+  font-weight: normal;
+  border-bottom: black 2px solid;
+}
+
+.h5 {
+  font-size: 1.3rem;
+}

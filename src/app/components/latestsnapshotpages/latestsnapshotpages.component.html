@@ -1,0 +1,58 @@
+<app-topnav></app-topnav>
+<app-sidenavbar></app-sidenavbar>
+<div class="main-container">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 title-section">
+        <h3>Latest Snapshots</h3>
+      </div>
+    </div>
+    <div class="row m-3">
+      <div *ngIf="!loading">
+        <app-loadingspinner></app-loadingspinner>
+      </div>
+      <div class="col-lg-2 col-md-4" *ngFor="let item of snapshotdata">
+        <div class="card m-1" style="width: 100%; height: 12rem">
+          <div style="height: 6rem; width: 100%">
+            <img
+              class="card-img-top"
+              src="{{ item['latest'] }}"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="card-body p-2">
+            <h5 class="card-title m-0 text-capitalize">{{ item["name"] }}</h5>
+            <p class="card-text m-0 mt-1">
+              {{ item["date"] !== "" ? (item["date"] | date: "medium") : "" }}
+            </p>
+            <a
+              [routerLink]="['/latestsnap', item['employeeid'], item['name']]"
+              class="btn btn-primary"
+              >More</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4" *ngFor="let item of snaphshotlessdata">
+        <div class="card m-1" style="width: 100%; height: 12rem">
+          <div style="height: 6rem; width: 100%">
+            <div class="p-2">
+              <p class="h6">NoSnapshot</p>
+            </div>
+          </div>
+          <div class="card-body p-2">
+            <h5 class="card-title m-0 text-capitalize">{{ item["name"] }}</h5>
+            <p class="card-text m-0" [ngClass]="{ 'mt-3': !item['date'] }">
+              {{ item["date"] !== "" ? (item["date"] | date: "medium") : "" }}
+            </p>
+            <a
+              [routerLink]="['/latestsnap', item['employeeid'], item['name']]"
+              class="btn btn-primary"
+              >More</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

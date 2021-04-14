@@ -1,0 +1,93 @@
+.main-container {
+  /* padding: 25px; */
+  margin-top: 5rem;
+  margin-left: 16.3rem;
+}
+.title-section {
+  background-image: url("../../../assets/topbar-background-sky-blue.jpg");
+  width: 100vw;
+  height: 11vh;
+  padding: 20px;
+  padding-left: 75px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title-section h3 {
+  color: white;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#customers th {
+  border: 0px;
+}
+#customers td {
+  font-size: 12px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* #customers tr:hover {background-color: #ddd;} */
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: blue;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+}
+table {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  /* border-radius: 12px; */
+}
+table th:first-child {
+  border-top-left-radius: 12px;
+}
+
+/* top-right border-radius */
+table th:last-child {
+  border-top-right-radius: 12px;
+}
+
+/* bottom-left border-radius */
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+/* bottom-right border-radius */
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}
+@media (max-width: 1299px) {
+  .main-container {
+    margin-top: 5rem;
+    margin-left: 10rem;
+  }
+}
+@media (max-width: 992px) {
+  .main-container {
+    margin-top: 5rem;
+    margin-left: 0;
+  }
+}
+/* table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+} */

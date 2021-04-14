@@ -1,0 +1,45 @@
+.scroll {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: blue;
+  outline: 0.2px solid blue;
+}
+
+.form-group .form-control {
+  padding-left: 2.375rem;
+}
+
+.form-group .form-control-icon {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+.h5 {
+  font-size: 1.3rem;
+}
+.more {
+  width: 135px;
+  height: 5rem;
+  padding-top: 1.5rem;
+  background-color: white;
+  color: blue;
+  cursor: pointer;
+}

@@ -1,0 +1,152 @@
+<div class="div">
+  <div class="fixed-top top-nav">
+    <div class="logo ml-5">
+      <img
+        src="../../../assets/whiteeyelogo.svg"
+        alt="logo"
+        routerLink="/index"
+      />
+    </div>
+    <ngb-carousel [showNavigationArrows]="true">
+      <!-- <ng-template ngbSlide>
+        <div class="text-center py-3">hello world</div>
+      </ng-template> -->
+      <ng-template ngbSlide>
+        <div class="text-center py-3">
+          Pulseye employee monitoring tool
+          <a
+            routerLink="/index"
+            style="background-color: blue; color: aliceblue; border-radius: 8px"
+            class="mx-2 px-2 py-1"
+          >
+            Dashboard
+          </a>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="text-center py-3">
+          monitors violation data of employees
+          <a
+            routerLink="/latestsnapshots"
+            style="background-color: blue; color: aliceblue; border-radius: 8px"
+            class="mx-2 px-2 py-1"
+          >
+            Snapshots
+          </a>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+    <div style="margin-left: 15rem">
+      <div class="admin" (click)="settingclicker()"></div>
+    </div>
+
+    <button class="btn btn-danger mr-3" style="height: 2rem" (click)="logout()">
+      Logout
+    </button>
+
+    <!-- onclick dropdown -->
+    <ul
+      class="position-absolute list-group"
+      style="right: 6rem; top: 90%"
+      *ngIf="settings"
+    >
+      <a class="list-group-item" style="cursor: pointer; color: blue">
+        <i class="fa fa-user mr-1" style="color: blue; width: 12px"></i>
+        Profile
+      </a>
+      <!-- <div class="dropdown-divider"></div> -->
+      <a
+        class="list-group-item"
+        style="cursor: pointer; color: blue"
+        (click)="open(mymodal)"
+        ><i class="fa fa-cogs mr-1" style="color: blue; width: 12px"></i>
+        Settings
+      </a>
+      <!-- <div class="dropdown-divider"></div> -->
+      <a
+        class="list-group-item"
+        style="cursor: pointer; color: blue"
+        routerLink="/"
+        (click)="logout()"
+      >
+        <i class="fa fa-sign-out mr-1" style="color: blue; width: 12px"></i>
+        Logout
+      </a>
+    </ul>
+  </div>
+</div>
+<!-- settings modal -->
+<ng-template #mymodal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Settings</h4>
+    <button
+      type="button"
+      class="close"
+      aria-label="Close"
+      (click)="modal.dismiss('Cross click')"
+    >
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-4" style="height: 13rem">
+        <div class="profilephoto">
+          <div class="imagepreview">
+            <img [src]="image" alt="user" (click)="upload(mydiv)" />
+          </div>
+          <div>
+            <input
+              type="file"
+              name="file"
+              id="file"
+              #mydiv
+              style="display: none"
+              (change)="uploadfile($event)"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Username</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Username"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Desigation</label
+          >
+          <input
+            class="form-control"
+            type="text"
+            id="exampleFormControlTextarea1"
+            placeholder="Designation"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-light"
+      (click)="modal.close('Save click')"
+    >
+      CANCEL
+    </button>
+    <button
+      type="button"
+      class="btn btn-primary"
+      (click)="modal.close('Save click')"
+    >
+      APPLY CHANGES
+    </button>
+  </div>
+</ng-template>
